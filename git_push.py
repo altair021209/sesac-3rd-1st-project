@@ -5,3 +5,8 @@ app = FastAPI()
 def index():
     msg = "pong"
     return {"msg": msg}
+
+@app.get("/pingping")
+def index():
+    msg = "pongpong"
+    return {"msg": msg}
